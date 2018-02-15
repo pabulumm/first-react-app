@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
     "build": "webpack -d && cp src/app/index.html dist/index.html && webpack-dev-server --hot --inline --colors --progress --content-base src/",
     "build-prod": "webpack -p && cp src/app/index.html dist/index.html"
   },
@@ -17,8 +18,11 @@
   "dependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "jquery": "^3.2.1",
+    "moment": "^2.20.1",
+    "node-sass": "^4.7.2",
     "popper": "^1.0.0",
     "react": "^16.1.1",
+    "react-datepicker": "^1.1.0",
     "react-dom": "^16.1.1",
     "webpack-css-loaders": "^1.0.0"
   },
